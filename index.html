@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        
+    <header>
+        <img class="logo" src="imagenes/logoalura.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <textarea class="nuevaPalabra" placeholder="Ingrese una palabra de hasta 8 caracteres."></textarea>
+        <section class="botonesMenu">
+                <button class="iniciar" onclick="botonIniciar()">Iniciar juego</button>
+                <button class="agregar" onclick="botonAgregar()">Agregar nueva palabra</button>
+        </section>
+
+        <section class="botonesAgregar">
+            <button class="guardar" onclick="botonGuardar()">Guardar y empezar</button>
+            <button class="cancelar" onclick="botonCancelar()">Cancelar</button>
+        </section>
+
+        <section class="juego">
+            <div class="lienzo"><canvas width="1200" height="580" ></canvas></div>
+            <div class="botonesJuego">
+                <button class="nuevo" onclick="botonNuevo()">Nuevo juego</button>
+                <button class="abandonar" onclick="botonAbandonar()">Volver al inicio</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-distribucion">
+        <div class="footer-a-la-derecha">
+            <a href="https://www.linkedin.com/in/federico-aldrighetti/"></a>
+            <a href="https://github.com/faldrighetti"></a>
+        </div>
+
+        <div class="footer-izquierda">
+            <p class="footer-titulo">Copyright © Alura 2022. Todos los derechos reservados. </p>
+        </div>
+    </footer>
+
+    <script src="ahorcado.js"></script>
+
+</body>
+</html>
